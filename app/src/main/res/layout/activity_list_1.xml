@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FA"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:background="#F3F6FA"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/left_icon" />
+
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="870dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:adjustViewBounds="true"
+            android:background="#F3F6FA"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu_icon" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text="업체를 선택한 후"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_marginLeft="50dp"
+        android:text="인감촬영을 시작하겠습니다."
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/r_btn1"
+            android:layout_width="840dp"
+            android:layout_height="151dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:text="   (주) 하나카드\n   410-81-264794"
+            android:textAlignment="textStart"
+            android:textSize="40sp"
+            android:background="@drawable/selector_radio_button"
+            android:textColor="@drawable/selector_radio_text"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/r_btn2"
+            android:layout_width="840dp"
+            android:layout_height="151dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:text="   (주) 하나증권\n   410-81-264794"
+            android:textAlignment="textStart"
+            android:textSize="40sp"
+            android:background="@drawable/selector_radio_button"
+            android:textColor="@drawable/selector_radio_text" />
+
+        <RadioButton
+            android:id="@+id/r_btn3"
+            android:layout_width="840dp"
+            android:layout_height="151dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:text="   (주) 하나생명\n   410-81-264794"
+            android:textAlignment="textStart"
+            android:textSize="40sp"
+            android:background="@drawable/selector_radio_button"
+            android:textColor="@drawable/selector_radio_text" />
+
+        <RadioButton
+            android:id="@+id/r_btn4"
+            android:layout_width="840dp"
+            android:layout_height="151dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:text="   (주) 하나손해보험\n   410-81-264794"
+            android:textAlignment="textStart"
+            android:textSize="40sp"
+            android:background="@drawable/selector_radio_button"
+            android:textColor="@drawable/selector_radio_text" />
+    </RadioGroup>
+
+    <android.widget.Button
+        android:id="@+id/selectComplete"
+        android:layout_width="316dp"
+        android:layout_height="108dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/button"
+        android:text="촬영시작"
+        android:textColor="#ffffff"
+        android:textSize="34sp" />
+
+</LinearLayout>
